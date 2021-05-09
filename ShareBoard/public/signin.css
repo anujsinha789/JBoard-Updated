@@ -1,0 +1,90 @@
+.landing_page_container{
+  margin : auto;
+  width : 100%;
+  background-color : 'white';
+  display : flex;
+  justify-content : center;
+  align-items : center;
+  overflow : hidden;
+}
+.form-signin {
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+  position: relative;
+  overflow : hidden;
+}
+.form-signin .checkbox {
+  font-weight: 400;
+}
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  font-size: 12px;
+  color : antiquewhite;
+
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: 10px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="text"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+#inputName{
+    margin-bottom : 5px;
+    border-radius: 5px;
+    
+}
+#RoomId{
+    border-radius: 5px;
+    
+}
+#Password{
+  border-radius: 5px;
+  padding-left : '5px';
+}
+
+#EmailID{
+  border-radius: 5px;
+}
+
+.text-center{
+  position: relative;
+  text-align: center;
+  width : 100%;
+  height: 100%;
+  margin : 5px auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color:#263238;
+  border-radius : 50px;
+  
+}
+
+#login_btn{
+  background-color: chartreuse;
+}
+#signup_btn{
+  background-color: crimson;
+}
+
+.input-textfeild{
+  color : '#ffffff'
+}

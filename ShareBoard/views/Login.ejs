@@ -1,0 +1,89 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.1.1">
+    <title>ShareBoard Login</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/sign-in/">
+
+    <!-- Bootstrap core CSS -->
+<link href="/docs/4.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <!-- Favicons -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <!-- <script src="./chat.js" defer></script> -->
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      hr.rounded {
+        border-top: 2px solid rgb(219, 75, 75);
+        border-radius: 5px;
+        width: 100px;
+      }
+    </style>
+    
+    <!-- Custom styles for this template -->
+    <link href="signin.css" rel="stylesheet">
+  </head>
+  <!-- <div id="room-container">
+    <% Object.keys(rooms).forEach(room => { %>
+      <div><%= room %></div>
+      <a href="/<%= room %>">Join</a>
+    <% }) %>
+  </div>  -->
+  <!-- <form action="/room" method="POST">
+    <input name="room" type="text" required>
+    <button type="submit">New Room</button>
+  </form> -->
+  <body class=" container text-center"> -->
+    <div class = "landing_page_container">
+      <form action="/login" method="POST" class="form-signin">
+        <img class="mb-4" src="./assets/WhiteBoard.png" alt="" width="72" height="72">
+        <h1 class="h2 mb-3 font-weight-normal" style="color :azure; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Welcome to JBoard</h1>
+        <input  name = "EmailID" type="email" id="EmailID" class="form-control" placeholder="Email ID" required autofocus autocomplete="off">
+        <!-- <input  name = "username" type="text" id="inputName" class="form-control" placeholder="Enter Your Name" required autofocus autocomplete="off"> -->
+        <input  name = "Password" type="password" id="Password" class="form-control" placeholder="Password" required autocomplete="off">
+        <input  name = "room" type="text" id="RoomId" class="form-control" placeholder="RoomID" required autocomplete="off">
+
+        <button class="btn btn-lg btn-success btn-block modal-trigger" id = "login_btn"  type="submit">Login</button>
+        <hr class="rounded">
+        <button class="btn btn-lg btn-danger btn-block modal-trigger"  id = "signup_btn" type="button">Signup</button>
+        <p class="mt-5 mb-3 text-muted">&copy; Developed By Anuj Sinha</p>
+      </form>
+    </div>
+    
+    <script type="text/javascript">
+      const signup_btn = document.getElementById("signup_btn");
+      signup_btn.onclick = function(e){
+          e.preventDefault();
+          var url = window.location + encodeURIComponent('signup'); // index.html?name=' + encodeURIComponent(name);
+          console.log(url)
+            document.location.href = url;// + 'signup';
+      };
+  </script> 
+  
+</form>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</body>
+</html>
