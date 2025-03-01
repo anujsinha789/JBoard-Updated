@@ -2,7 +2,7 @@
 
 A versatile digital whiteboard application inspired by Google's Jamboard, designed to foster creativity and collaboration for artists, designers, and creative teams.
 
-![Craft Collaboration Board Screenshot](screenshot_url_here)
+![Jboard Collaboration Board Screenshot](screenshot_url_here)
 
 ## Features
 
